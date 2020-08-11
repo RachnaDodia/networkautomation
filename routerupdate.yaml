@@ -1,7 +1,6 @@
 ---
 - name: UPGRADE ROUTER FIRMWARE
-  hosts: rtr1
-  connection: network_cli
+  hosts: cisco
   gather_facts: no
 
   vars:
