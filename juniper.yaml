@@ -1,7 +1,6 @@
 ---
 - name: Examples of juniper_junos_software
   hosts: rtr3
-  connection: local
   gather_facts: no
   roles:
     - Juniper.junos
