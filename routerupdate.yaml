@@ -13,7 +13,7 @@
     - name: UPGRADE IOS IMAGE IF NOT COMPLIANT
       block:
       - name: COPY OVER IOS IMAGE
-        command: "scp system-image-filename.bin {{inventory_hostname}}:/system-image-filename.bin"
+        command: "scp system-image-filename.bin rtr1:/system-image-filename.bin"
 
       - name: SET BOOT SYSTEM FLASH
         ios_config:
