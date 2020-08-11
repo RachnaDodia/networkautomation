@@ -1,0 +1,16 @@
+---
+- name: Examples of juniper_junos_software
+  hosts: rtr3
+  connection: local
+  gather_facts: no
+  roles:
+    - Juniper.junos
+
+  tasks:
+    - name: Execute a basic Junos software upgrade.
+      juniper_junos_software:
+        local_package: "./images/"
+      register: response
+    - name: Print the complete response.
+      debug:
+        var: response
