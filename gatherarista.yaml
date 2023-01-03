@@ -14,3 +14,4 @@
     copy:
       content: "{{ vlan_config | to_nice_yaml }}"
       dest: "~/{{ inventory_hostname }}_vlan.yml"
+    delegate_to: backup-server
