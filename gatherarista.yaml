@@ -13,4 +13,4 @@
   - name: copy vlan_config to file
     copy:
       content: "{{ vlan_config | to_nice_yaml }}"
-      dest: "~/network-workshop/{{ inventory_hostname }}_vlan.yml"
+      dest: "~/{{ inventory_hostname }}_vlan.yml"
